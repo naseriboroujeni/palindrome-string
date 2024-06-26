@@ -7,8 +7,12 @@ using namespace std;
 
 class PalindromeChecker {
 
+private:
+   static string filterAndNormalize(const std::string& text);
+   static bool isPalindrome(const string&  input);
+
 public:
-   static bool isPalindrome(string input);
+   static bool isPalindromeIgnorePunctuationSpaceCase(const string& input);
 };
 
 #endif
